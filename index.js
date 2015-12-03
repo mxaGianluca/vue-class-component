@@ -45,7 +45,7 @@ function decorator (Component) {
     options[key] = Component[key]
   })
   // find super
-  var Super = proto.__proto__.constructor
+  var Super = proto.constructor
   if (!(Super instanceof Vue)) {
     Super = Vue
   }
